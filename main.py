@@ -10,11 +10,9 @@ names = []
 scores = []
 
 for x in range(3):
-    name = input('Name: ')
-    score = int(input('Score: '))
+    names.append (input('Name: '))
+    scores.append(int(input('Score: ')))
 
-    names.append(name)
-    scores.append(score)
 print()
 
 maximum = scores[0]
@@ -30,4 +28,22 @@ for i in range(len(scores)):
         minimum = scores[i]
         min_name = names[i]
 print('The lowest score is ' + str(minimum) + ' scored by ' + min_name)
-print()
+print() 
+
+"""
+names = []
+scores = []
+
+for x in range(3):
+    names.append(input('Please enter name '))
+    scores.append(int(input('Please enter score ')))
+
+high_pos = 0
+
+for x in range(1,len(scores)):
+    if scores[x] > scores[high_pos]:
+        high_pos = x
+
+print(f'The highest was {names[high_pos]} with a score of {scores[high_pos]}')
+
+"""
